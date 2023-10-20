@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="container-fluid auth-div d-flex justify-content-center align-items-center">
+        <img src="img/Loader.gif" alt="" id="loader">
+        <div class="form-div d-flex justify-content-center align-items-center" id="form-div">
+        <div class="form">
+            <form action="">
+            <div class="mb-3">
+                <label for="fullname" class="form-label">Fullname</label>
+                <input type="text" class="form-control form-input" id="fullname" maxlength="20" aria-describedby="emailHelp">
+                <div style="color: red;" id="fullname-error"></div>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="number" class="form-control form-input" id="phone" aria-describedby="emailHelp">
+                <div style="color: red;" id="phone-error"></div>
+              </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control form-input" id="email" aria-describedby="emailHelp">
+              <div style="color: red;" id="email-error"></div>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control form-input" id="password">
+              <div style="color: red;" id="password-error"></div>
+            </div>
+            <button type="submit" class="btn btn-primary auth-button" id="signup-btn">Sign up</button> <br> <br>
+            <a href="index.html" class="signup-login">Already have an account?</a>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+    <script type="module" src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
